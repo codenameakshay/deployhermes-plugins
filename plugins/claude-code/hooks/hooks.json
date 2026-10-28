@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^mcp__plugin_deployhermes_deployhermes__(api_key_revoke|approval_confirm|attachment_remove|billing_portal_link|bot_fire|bot_pause|bot_restore|channel_disconnect|channel_test|channel_update|chat_post|clawhub_install|clawhub_preview|clawhub_search|credit_pack_checkout|credits_set_auto_recharge|datafast_metrics|email_domain_add|email_domain_remove|email_domain_verify|email_draft_discard|email_draft_revise|email_escalation_answer|email_escalation_dismiss|email_rule_remove|email_send_approve|email_send_schedule|heartbeat_set|inbox_create|integration_disconnect|integration_tool_list|integration_verify|memory_forget|mission_comment|mission_retry|mission_run_now|mission_trash|playbook_install|project_build_detect|project_build_env_remove|project_connection_list|project_dry_run_start|project_merge_approved_ticket|project_propose|project_refresh|project_resource_mapping_save|project_resume|provider_begin_login|provider_disconnect|provisioning_retry|schedule_bulk_set_enabled|schedule_create|schedule_remove|schedule_set_enabled|schedule_update|sentry_event_get|sentry_issue_list|share_publish|share_revoke|share_set_indexing|squad_pause|team_reject|team_remove|ticket_answer|ticket_dismiss|workflow_run|workspace_ask_lead|workspace_request_deletion|x_launch_publish|x_launch_reconcile)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/hooks/confirm-effects.mjs"
+            ],
+            "onFailure": "block"
+          }
+        ]
+      }
+    ]
+  }
+}

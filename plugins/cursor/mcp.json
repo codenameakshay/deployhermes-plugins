@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "deployhermes": {
+      "url": "https://deploy-hermes.com/mcp/v1",
+      "headers": {
+        "Authorization": "Bearer ${env:DEPLOYHERMES_API_KEY}"
+      }
+    }
+  }
+}

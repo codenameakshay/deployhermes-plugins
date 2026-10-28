@@ -1,0 +1,18 @@
+{
+  "name": "deployhermes-plugins",
+  "owner": {
+    "name": "DeployHermes",
+    "url": "https://deploy-hermes.com"
+  },
+  "metadata": {
+    "description": "DeployHermes skills and agents for Cursor",
+    "version": "0.1.3"
+  },
+  "plugins": [
+    {
+      "name": "deployhermes",
+      "source": "./plugins/cursor",
+      "description": "Run your DeployHermes workspace from your own AI assistant: skills and agents for triage, standups, missions, squads, schedules, knowledge and billing, over the DeployHermes MCP endpoint."
+    }
+  ]
+}

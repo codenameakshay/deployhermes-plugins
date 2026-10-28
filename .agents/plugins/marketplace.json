@@ -1,0 +1,20 @@
+{
+  "name": "deployhermes-plugins",
+  "interface": {
+    "displayName": "DeployHermes plugins"
+  },
+  "plugins": [
+    {
+      "name": "deployhermes",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

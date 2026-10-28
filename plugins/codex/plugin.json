@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "deployhermes",
+  "version": "0.1.3",
+  "description": "Run your DeployHermes workspace from your own AI assistant: skills and agents for triage, standups, missions, squads, schedules, knowledge and billing, over the DeployHermes MCP endpoint.",
+  "author": {
+    "name": "DeployHermes",
+    "url": "https://deploy-hermes.com"
+  },
+  "homepage": "https://deploy-hermes.com",
+  "repository": "https://github.com/codenameakshay/deployhermes-plugins",
+  "license": "MIT",
+  "keywords": [
+    "deployhermes",
+    "mcp",
+    "ai-agents",
+    "workspace"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "DeployHermes",
+        "shortDescription": "Run your DeployHermes workspace from Codex",
+        "longDescription": "Run your DeployHermes workspace from your own AI assistant: skills and agents for triage, standups, missions, squads, schedules, knowledge and billing, over the DeployHermes MCP endpoint.",
+        "developerName": "DeployHermes",
+        "category": "Productivity",
+        "websiteURL": "https://deploy-hermes.com"
+      }
+    }
+  }
+}
